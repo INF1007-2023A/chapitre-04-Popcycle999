@@ -3,23 +3,26 @@
 
 
 def is_even_len(string: str) -> bool:
-    pass
-
-
+    if len(string) % 2 == 0:
+        return True
+    else:
+        return False
+    
 def remove_third_char(string: str) -> str:
-    pass
-
+    premier = string[:2]
+    dernier = string[3:]
+    return premier + dernier
 
 def replace_char(string: str, old_char: str, new_char: str) -> str:
-    pass
+    return string.replace(old_char, new_char, 1)
 
 
 def get_number_of_char(string: str, char: str) -> int:
-    pass
+    return string.count(char)
 
 
 def get_number_of_words(sentence: str, word: str) -> int:
-    pass
+    return sentence.count(word)
 
 
 def main() -> None:
